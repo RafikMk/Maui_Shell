@@ -11,8 +11,6 @@
         FlowDirection="RightToLeft">-->
     <!--This does not affect the Flyout menu, which still slides from the left. 
         Instead, I aim to make the Flyout emerge from the right.-->
-   
-    
     <ShellContent 
         Title="Home RightToLeft !"
         ContentTemplate="{DataTemplate local:MainPage}"
