@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp1.MainPage" FlowDirection="RightToLeft">
+    <!--Here the code is well-formed and the content is properly presented from right to left. 
+        The problem remains in the Shell's Flyout.-->
+    <ScrollView>
+        <HorizontalStackLayout FlowDirection="RightToLeft"
+            Spacing="25" 
+            Padding="30,0"
+            VerticalOptions="Center">
+
+            <Image
+                Source="dotnet_bot.png"
+                SemanticProperties.Description="Cute dot net bot waving hi to you!"
+                HeightRequest="200"
+                HorizontalOptions="Center" />
+            <VerticalStackLayout  Spacing="15" VerticalOptions="Center" HorizontalOptions="Start" >
+            <Label
+                Text="Hello !"
+                SemanticProperties.HeadingLevel="Level1"
+                FontSize="32"
+                HorizontalOptions="Center" />
+
+            <Label TextColor="red"
+                Text="Here the code is well-formed and the content is properly presented &#x0a; from right to left.the problem remains in the Shell's Flyout"
+                FontSize="18"
+                HorizontalTextAlignment="Center"
+                HorizontalOptions="Center" />
+
+            <Button
+                x:Name="CounterBtn"
+                Text="Click me"
+                SemanticProperties.Hint="Counts the number of times you click"
+                Clicked="OnCounterClicked"
+                HorizontalOptions="Center" />
+            </VerticalStackLayout>
+        </HorizontalStackLayout>
+    </ScrollView>
+
+</ContentPage>
